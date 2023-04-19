@@ -7,9 +7,8 @@ function CardList({monsters}) {
     <div className='card-list'>
         {
         monsters.map((monster)=>{
-          const {id, name, email} = monster
           return (
-            <Card name={name} email={email} key={id} id={id}/>
+            <Card key={monster.id} monster={monster}/>
           )})
       }
     </div>
